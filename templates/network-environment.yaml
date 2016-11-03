@@ -19,7 +19,7 @@ parameter_defaults:
   ControlPlaneSubnetCidr: '24'
   # Gateway router for the provisioning network (or Undercloud IP)
   ControlPlaneDefaultRoute: 192.168.0.1
-  EC2MetadataIp: 192.0.2.1  # Generally the IP of the Undercloud
+  EC2MetadataIp: 192.168.0.1  # Generally the IP of the Undercloud
   # Customize the IP subnets to match the local environment
   InternalApiNetCidr: 192.168.1.0/24
   StorageNetCidr: 192.168.2.0/24
