@@ -8,10 +8,10 @@ resource_registry:
     /home/stack/templates/nic-configs/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig:
     /home/stack/templates/nic-configs/controller.yaml
-  OS::TripleO::ObjectStorage::Net::SoftwareConfig:
-    /home/stack/templates/nic-configs/swift-storage.yaml
-  #OS::TripleO::CephStorage::Net::SoftwareConfig:
-  #  /home/stack/templates/nic-configs/ceph-storage.yaml
+  #OS::TripleO::ObjectStorage::Net::SoftwareConfig:
+  #  /home/stack/templates/nic-configs/swift-storage.yaml
+  OS::TripleO::CephStorage::Net::SoftwareConfig:
+    /home/stack/templates/nic-configs/ceph-storage.yaml
 
 parameter_defaults:
   # This section is where deployment-specific configuration is done
